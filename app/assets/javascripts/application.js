@@ -16,4 +16,4 @@
 // app/assets/javascripts/Slider_Carousel_webalgustocom.js
 // app/assets/javascripts/navbar.js
 // app/assets/javascripts/player.js
-
+// app/assets/javascripts/rotatingtext.js

@@ -1,0 +1,87 @@
+<section class="bg-img-responsive" >
+
+        <div class="jumbotron" style="padding:0px;background-image:url('http://res.cloudinary.com/wesley-united-methodist-kc/image/upload/e_brightness:-57,o_87,q_57/v1502821896/BookAltar_eskihw.jpg');">
+
+
+    <img src="http://res.cloudinary.com/wesley-united-methodist-kc/image/upload/v1502819951/wesleysermons_gd0nwj.png" alt="">
+
+
+
+            <div class="bounce"><div class="col-md-6"><i class="fa fa-headphones" style="font-size:5vw;"></i></div>
+        </div>
+    </section>
+
+
+<div class="container">
+   <div class="row">
+      <div class="col-md-12">
+
+
+ <h2 style="text-align: center; color: red;"> Welcome To Our Sermon Archive!<br></h2>
+
+<p style="text-align: center; margin-right: 20%; margin-left: 20%;"> Feel free to click on any Sermon below to listen to it!    </p>
+
+      </div>
+  </div>
+
+</div>
+
+<div class="container-prayer" style="margin-right: 10%, margin-left: 10%;border-radius: ">
+<div class="prayer-div">
+  <ul class="prayer-ul">
+
+<% @sermon.each do |sermon| %>
+
+<%= link_to sermon_path(sermon) do %>
+
+
+    <li class="prayer-li">
+       <img src="http://res.cloudinary.com/wesley-united-methodist-kc/image/upload/v1502482668/flamelogo_xphv4h.png" class="prayer-img" style="width: 100px, height: 100px;" />
+      <h3 class="prayer-h3"> <%= sermon.title  %> </h3>
+
+      <p class="prayer-p"><%= sermon.description %></p>
+<p class="prayer-p"><%= sermon.speakdate.to_formatted_s(:long) %></p>
+      <p class="prayer-p">
+
+            </p>
+    </li>
+
+<% if current_user.nil?  %>
+
+   <% else %>
+   <% if current_user.admin? %>
+    <%= link_to "Delete", sermon_path(sermon) , class: "btn-treehouse" , method: :delete, data: { confirm: "Are you sure?"}, class: "btn-treehouse" %>
+  <%= link_to "edit", edit_sermon_path(sermon), class: "btn-treehouse" %>
+
+  <% else %>
+  <% end %>
+  <% end %>
+  <% end %>
+<% end %>
+  </ul>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="container" style="text-align: center;margin-top: 5%; padding-bottom: 10%;">
+
+<% if current_user.nil?  %>
+
+
+<% else %>
+<% if current_user.admin? %>
+
+  <%= link_to "Add New Sermon (Admin Only)" , new_sermon_path, class: "btn-treehouse" %>
+  <% else  %>
+<% end %>
+        <% end %>
+</div>
+
+
+

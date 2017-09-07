@@ -61,7 +61,7 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-  'Joe DiFrancesco',
+  'Joe DiFrancesco,',
   'Inventor',
   'Pilot',
   'Web Developer',

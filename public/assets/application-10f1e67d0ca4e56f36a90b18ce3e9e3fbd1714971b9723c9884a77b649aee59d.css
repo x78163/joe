@@ -14261,7 +14261,7 @@ stretchRight
   ********************************** */
 /* line 12, /home/x78163/code/x78163/joe/app/assets/stylesheets/layout/_navbar.scss */
 .navbar-inverse {
-  background: rgba(62, 195, 246, 0);
+  background: rgba(0,0,0, 0);
   border-bottom: none;
 }
 

@@ -56,44 +56,22 @@ ul.nav {
            Big Logo
   ********************************** */
 .big-logo-row {
-  background: rgba(0, 0, 0, 0.61);
+  background: gold;
 
   .big-logo-container {
     padding-top: $navbar-height;
   }
 
   h1 {
-    font-size: 1vw;
+    font-size: 4em;
     margin:0;
     padding:0 0 $big-logo-padding 0;
 
-    @media (min-width: 400px) { font-size: 1em; }
-    @media (min-width: 440px) { font-size: 2em; }
-    @media (min-width: 500px) { font-size: 3em; }
-    @media (min-width: 630px) { font-size: 3em;  }
-    @media (min-width: 768px) { font-size: 4em; padding-bottom: $big-logo-padding * 2; }
-    @media (min-width: 1200px) { font-size: 4em; }
+    @media (min-width: 400px) { font-size: 4.5em; }
+    @media (min-width: 440px) { font-size: 5.5em; }
+    @media (min-width: 500px) { font-size: 6.5em; }
+    @media (min-width: 630px) { font-size: 7.5em;  }
+    @media (min-width: 768px) { font-size: 9em; padding-bottom: $big-logo-padding * 2; }
+    @media (min-width: 1200px) { font-size: 12em; }
   }
-}
-
-
-
-
-
-.container-scramble {
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.text{
-  font-weight: 100;
-  font-size: 8vw;
-  text-align: center;
-  color: #FAFAFA;
-}
-.dud
-{
-  color: #757575;
 }

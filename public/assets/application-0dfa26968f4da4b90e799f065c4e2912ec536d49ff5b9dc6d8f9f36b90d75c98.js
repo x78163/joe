@@ -13938,7 +13938,7 @@ $(function(){
 
     // Initializing the swiper plugin for the slider.
     // Read more here: http://idangero.us/swiper/api/
-    
+
     var mySwiper = new Swiper ('.swiper-container', {
         loop: true,
         pagination: '.swiper-pagination',
@@ -13946,7 +13946,7 @@ $(function(){
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev'
     });
-    
+
 });
 /*Bootstrap Carousel Touch Slider.
 
@@ -14696,7 +14696,7 @@ padding:"inner"+a,content:b,"":"outer"+a},function(c,d){n.fn[d]=function(d,e){va
 var navbarHeight = $('.navbar').height();
 
 $(window).scroll(function() {
-  var navbarColor = "62,195,246";//color attr for rgba
+  var navbarColor = "0,0,0";//color attr for rgba
   var smallLogoHeight = $('.small-logo').height();
   var bigLogoHeight = $('.big-logo').height();
 
@@ -21914,7 +21914,7 @@ var widget = $.widget;
        * @protected
        * @param {string} key - attribute name
        * @param {*|boolean} value - the value of the attribute. If the value is boolean `true`, return the key only.
-       * @returns {string} the attribute  
+       * @returns {string} the attribute
        *
        */
 

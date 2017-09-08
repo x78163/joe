@@ -17,3 +17,4 @@
 // app/assets/javascripts/navbar.js
 // app/assets/javascripts/player.js
 // app/assets/javascripts/rotatingtext.js
+// app/assets/javascripts/animation.js
